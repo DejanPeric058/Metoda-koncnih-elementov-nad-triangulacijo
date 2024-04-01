@@ -14,5 +14,10 @@ tC = t.ConnectivityList;
 res = mke(p,q,r,f,t,g);
 resP = res.Points;
 resC = res.ConnectivityList;
-trisurf(resC,resP(:,1), resP(:,2),resP(:,3))
+resP1 = arrayfun(g,tP(:,1), tP(:,2))
+trisurf(resC,resP(:,1), resP(:,2),abs(resP(:,3)- resP1))
+colorbar
+
+% maybe we can do it with delaunayTriangulation on free bound
+
 

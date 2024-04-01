@@ -16,3 +16,4 @@ res = mke(p,q,r,f,TR,g);
 resP = res.Points;
 resC = res.ConnectivityList;
 trisurf(resC,resP(:,1), resP(:,2),resP(:,3))
+colormap([0 0 1])
