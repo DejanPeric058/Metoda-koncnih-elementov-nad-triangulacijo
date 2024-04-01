@@ -35,5 +35,3 @@ else
     z = lin(x,y);
 end
 end
-
-
